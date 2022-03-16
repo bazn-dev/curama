@@ -1,0 +1,9 @@
+{
+  "name": "task",
+  "methods": [
+    "getTasks",
+    "addTask",
+    "editTask",
+    "deleteTask"
+  ]
+}

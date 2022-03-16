@@ -1,0 +1,17 @@
+.v-toolbar__content {
+  //padding-left: 0 !important;
+  //padding-right: 0 !important;
+}
+
+.v-app-bar .v-toolbar__content {
+  height: 48px !important;
+}
+
+.theme--dark.v-navigation-drawer {
+  background-color: #272727 !important;
+}
+
+.v-btn.v-size--default {
+  font-size: 0.7rem !important;
+  font-weight: 400 !important;
+}

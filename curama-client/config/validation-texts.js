@@ -1,0 +1,19 @@
+export const VALIDATION_TEXTS = {
+  required: () => 'This field is required',
+  requiredIf: () => 'This field is required',
+  minLength: params => `This field should length ${params.min} or more`,
+  maxLength: params => `This field should length ${params.max} or less`,
+  minValue: params => `This field should only ${params.min} or more`,
+  maxValue: params => `This field should only ${params.max} or less`,
+  between: params => `This field should only between ${params.min} and ${params.max}`,
+  alpha: () => 'This field should only contain alphabet characters',
+  alphaNum: () => 'This field should only contain alphabet characters or numbers',
+  numeric: () => 'This field should only contain numbers',
+  integer: () => 'This field should only positive or negative integers',
+  decimal: () => 'This field should only positive or negative decimal numbers',
+  email: () => 'Please enter valid e-mail',
+  ipAddress: () => 'Please enter valid IP address',
+  macAddress: () => 'Please enter valid MAC address',
+  sameAs: () => 'Please enter valid value',
+  url: () => 'Please enter valid url'
+};

@@ -1,0 +1,9 @@
+{
+  "name": "link",
+  "methods": [
+    "getLinks",
+    "addLink",
+    "editLink",
+    "deleteLink"
+  ]
+}

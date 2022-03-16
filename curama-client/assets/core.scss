@@ -1,0 +1,23 @@
+@import 'reset.scss';
+
+@font-face {
+  font-family: 'D3 Euronism';
+  font-style: normal;
+  src: url(fonts/D3-Euronism-Bold_12780.ttf) format('ttf');
+}
+
+body {
+  font-family: 'D3 Euronism', sans-serif !important;
+}
+
+.input-validation {
+  font-size: 0.75rem;
+  color: #f44336;
+}
+
+.ct-container {
+  width: 100%;
+  min-height: 100vh;
+  //margin-top: 64px;
+  box-sizing: border-box;
+}

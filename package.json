@@ -1,0 +1,19 @@
+{
+  "name": "curama",
+  "version": "1.0.0",
+  "description": "Smart virtual assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazn-dev/curama.git"
+  },
+  "author": "Alex Bazhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bazn-dev/curama/issues"
+  },
+  "homepage": "https://github.com/bazn-dev/curama#readme"
+}
