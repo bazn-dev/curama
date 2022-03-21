@@ -20,21 +20,25 @@
             Project
           </div>
         </v-layout>
-        <v-list-item-group>
-          <v-list dense nav class="pa-0">
-            <v-list-item>
-              <v-list-item-title class="font-weight-bold">
+        <v-list dense nav class="pa-0">
+          <v-list-item-group>
+            <v-list-item class="mb-0">
+              <v-list-item-title class="align-center font-weight-bold">
                 <v-icon small>folder</v-icon> src
               </v-list-item-title>
             </v-list-item>
-            <v-list-item>
-              <v-list-item-title class="font-weight-bold">App.vue</v-list-item-title>
+            <v-list-item class="mb-0">
+              <v-list-item-title class="align-center font-weight-bold">
+                <v-icon small>description</v-icon> App.vue
+              </v-list-item-title>
             </v-list-item>
-            <v-list-item>
-              <v-list-item-title class="font-weight-bold">index.vue</v-list-item-title>
+            <v-list-item class="mb-0">
+              <v-list-item-title class="align-center font-weight-bold">
+                <v-icon small>description</v-icon> index.vue
+              </v-list-item-title>
             </v-list-item>
-          </v-list>
-        </v-list-item-group>
+          </v-list-item-group>
+        </v-list>
       </v-col>
       <v-col
         cols="12"
@@ -45,19 +49,25 @@
         <v-layout
           justify-space-between
           align-center
-          class="pa-2"
           style="border-bottom: 1px solid rgba(0, 0, 0, 0.12);"
         >
-          <v-tabs class="module-functional__code-tabs">
+          <v-tabs
+            class="module-functional__code-tabs"
+            height="38"
+          >
             <v-tab class="module-functional__code-tab">
-              <div class="subtitle-2">
+              <v-icon small>description</v-icon>
+              <div class="caption font-weight-medium">
                 App.vue
               </div>
+              <v-icon small>close</v-icon>
             </v-tab>
             <v-tab class="module-functional__code-tab">
-              <div class="subtitle-2">
+              <v-icon small>description</v-icon>
+              <div class="caption font-weight-medium">
                 index.vue
               </div>
+              <v-icon small>close</v-icon>
             </v-tab>
           </v-tabs>
         </v-layout>
@@ -84,8 +94,10 @@
           class="pa-2"
           style="border-bottom: 1px solid rgba(0, 0, 0, 0.12);"
         >
-          <div class="subtitle-2">
-            Runner
+          <div>
+            <div class="subtitle-2">
+              Runner
+            </div>
           </div>
         </v-layout>
       </v-col>
@@ -138,6 +150,7 @@ export default {
     }
 
     &-tab {
+      justify-content: space-between;
       padding: 0 5px;
       text-transform: none;
     }
