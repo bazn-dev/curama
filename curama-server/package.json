@@ -1,7 +1,7 @@
 {
-  "name": "curama-server-gateway",
+  "name": "curama-server",
   "version": "1.0.0",
-  "description": "API gateway for server of Curama.",
+  "description": "CURAMA server.",
   "author": "Alex Bazhin",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
     "mongoose": "^5.3.9",
+    "node-cmd": "^4.0.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "python-shell": "^3.0.0",
