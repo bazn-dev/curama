@@ -1,0 +1,17 @@
+{
+  "name": "task",
+  "methods": {
+    "getTasks": {
+      "statusMessage": "Updated task ${data._id}"
+    },
+    "addTask": {
+      "statusMessage": "Updated task ${data._id}"
+    },
+    "editTask": {
+      "statusMessage": "Updated task ${data._id}"
+    },
+    "deleteTask": {
+      "statusMessage": "Updated task ${data._id}"
+    }
+  }
+}

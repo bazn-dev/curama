@@ -2,6 +2,6 @@ const mongoose = require('mongoose');
 const config = require('../config/config.json');
 
 module.exports.mongooseLoader = async function() {
-  mongoose.connect(config.dataBase.host, { useNewUrlParser: true });
+  await mongoose.connect(config.dataBase.host);
   mongoose.set('debug', true);
 };

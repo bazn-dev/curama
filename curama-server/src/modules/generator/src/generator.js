@@ -41,7 +41,7 @@ class BackendGenerator {
 
     /* config */
     this.setConfigData(this.SETTINGS);
-    this.generateFile(this.DIR_CONFIG, 'config.json', CONFIG_DATA);
+    this.generateFile(this.DIR_CONFIG, 'developer.config.json', CONFIG_DATA);
 
     /* loaders */
     this.generateFile(this.DIR_LOADERS, 'express.js', EXPRESS_LOADER_CODE);
@@ -158,7 +158,7 @@ class BackendGenerator {
     this.DIR_CONFIG = `../${this.DIR_PROJECT}/src/config`;
   }
 
-  /* Установка данных config.json */
+  /* Установка данных developer.config.json */
   setConfigData (settings) {
     CONFIG_DATA = Object.assign(CONFIG_DATA, {
       port: settings.port,

@@ -1,6 +1,6 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const UserModel = require('../components/user/user.model').model;
+const UserModel = require('../modules/gateway/user/user.model').model;
 
 module.exports.passportLoader = async function() {
   passport.use(new LocalStrategy({
