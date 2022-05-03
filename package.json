@@ -1,7 +1,7 @@
 {
   "name": "curama",
   "version": "1.0.0",
-  "description": "Smart virtual assistant",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/bazn-dev/curama/issues"
   },
-  "homepage": "https://github.com/bazn-dev/curama#readme"
+  "homepage": "https://github.com/bazn-dev/curama#readme",
+  "keywords": []
 }
