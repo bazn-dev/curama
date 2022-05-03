@@ -1,5 +1,5 @@
-const services = require('./develper.service')
-const {api} = require('./developer.config.json')
+const services = require('./root.service')
+const {api} = require('./root.config.json')
 const moment = require('moment')
 const mongoose = require('mongoose')
 const log = require('../../libs/logger')

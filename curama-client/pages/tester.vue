@@ -53,9 +53,9 @@
     data () {
       return {
         data: {
-          url: 'ws://localhost:8080',
+          url: 'http://localhost:8080',
           method: '',
-          requestData: '{"title": "Sklad", "url": "http://localhost:3000", "description": "description", "createdDate": "24.03.2021"}',
+          requestData: '{}',
           responseData: ''
         }
       };
@@ -70,8 +70,9 @@
     },
     methods: {
       send () {
-        this.$socket.emit(this.data.method, this.data.requestData);
+        this.$socket.emit(this.data.method, JSON.parse(this.data.requestData))
         this.sockets.subscribe(this.data.method, data => {
+          console.log(data)
           this.data.responseData = JSON.stringify(data);
         });
       }

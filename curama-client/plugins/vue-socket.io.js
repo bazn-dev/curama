@@ -8,9 +8,7 @@ const token = '123';
 
 Vue.use(new VueSocketIO({
     debug: true,
-    connection: SocketIO(process.env.WEBSOCKET_SERVER, {
-      auth: { token }
-    }),
+    connection: SocketIO('http://localhost:8080', { 'transports': ['websocket'] }),
     vuex: {
       store,
       actionPrefix: "SOCKET_",

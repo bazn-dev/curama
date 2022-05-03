@@ -1,27 +1,17 @@
 {
   "models": {
-    "tasks": {
+    "module": {
       "schema": {
-        "title": "String",
-        "text": "String",
-        "tags": "Array",
-        "attachedFiles": "Array",
-        "checkList": "Array",
-        "isFavorites": "Boolean",
-        "color": "String",
-        "isArchive": "Boolean",
-        "deadline": "Date",
-        "isDone": "Boolean",
-        "isPrompt": "Boolean",
-        "promptDate": "Date",
-        "promptPlace": "String",
-        "promptPeriodicity": "Number"
+        "name": "String",
+        "database": "Map",
+        "models": "Map",
+        "api": "Map"
       }
     }
   },
   "api": {
-    "tasks/get": {
-      "method": "getTasks",
+    "module/get": {
+      "method": "getModules",
       "request": {
 
       },

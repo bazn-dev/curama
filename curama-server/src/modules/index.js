@@ -1,5 +1,5 @@
 const developer = require('./developer');
 
-module.exports.connection = function (socket, io) {
+module.exports.connection = (socket, io) => {
   developer.connection(socket);
 };

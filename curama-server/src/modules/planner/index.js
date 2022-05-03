@@ -9,7 +9,7 @@ function updateAPI (socket) {
     const components = [];
 
     for (let i = 0; i < names.length; i++) {
-      components.push(require('./' + names[i] + '/' + names[i] + '.developer.config.json'));
+      components.push(require('./' + names[i] + '/' + names[i] + '.root.config.json'));
     }
 
     socket.emit('updateAPI', {

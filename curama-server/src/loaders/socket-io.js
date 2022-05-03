@@ -24,10 +24,12 @@ module.exports.socketIOLoader = async function (app) {
   //     console.error('access denied');
   //   }
   // })
+  console.log('load socket')
 
   io.on("connection", socket => {
     console.log("Add connection");
     require('../modules').connection(socket, io);
+    socket.on("add", data => io.emit("add", 'add'));
     socket.on("disconnect", data => io.emit("user disconnected", socket.userId));
   });
 };

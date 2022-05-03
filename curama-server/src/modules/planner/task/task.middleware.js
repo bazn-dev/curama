@@ -1,4 +1,4 @@
-const TaskModel = require('./task.model').model;
+const TaskModel = require('../../developer/task.model').model;
 const moment = require('moment');
 const log = require('../../scripts/logger');
 

@@ -37,6 +37,7 @@
     <section class="main-section">
       <v-app-bar flat elevate-on-scroll class="main-section__app-bar">
         <v-toolbar-title class="main-section__app-bar-title">{{ getTitle }}</v-toolbar-title>
+        <v-icon @click="redirectTo('tester')">settings_ethernet</v-icon>
       </v-app-bar>
       <nuxt/>
     </section>
@@ -77,6 +78,10 @@
     background-color: #f6f6f9;
 
     &__app-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
       height: 48px;
       background-color: #ffffff !important;
       border-bottom: 1px solid rgba(0, 0, 0, 0.12);

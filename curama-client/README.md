@@ -18,3 +18,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+# СРОЧНО ПОПРОБОВАТЬ https://microsoft.github.io/monaco-editor/
+# Это редактор кода
