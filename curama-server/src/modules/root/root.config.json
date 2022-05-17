@@ -1,108 +1,70 @@
 {
-  "models": {
-    "module": {
-      "schema": {
-        "name": "String",
-        "database": "Map",
-        "models": "Map",
-        "api": "Map"
-      }
-    }
-  },
-  "api": {
-    "module/get": {
-      "method": "getModules",
-      "request": {
-
-      },
-      "response": {
-        "success": {
-          "status": 200,
-          "statusMessage": "Successfully get tasks"
-        },
-        "error": {
-          "status": 500,
-          "statusMessage": "Failed to get tasks"
-        }
-      }
+  "modules": {
+    "schema": {
+      "name": "String",
+      "database": "Map",
+      "models": "Map",
+      "api": "Map"
     },
-    "tasks/add": {
-      "method": "addTask",
-      "request": {
-
-      },
-      "response": {
-        "success": {
-          "status": 200,
-          "statusMessage": "Successfully add task"
+    "api": {
+      "modules/get": {
+        "method": "get",
+        "request": {
         },
-        "error": {
-          "status": 500,
-          "statusMessage": "Failed to add task"
+        "response": {
+          "success": {
+            "status": 200,
+            "statusMessage": "Successfully get modules"
+          },
+          "error": {
+            "status": 500,
+            "statusMessage": "Failed to get modules"
+          }
         }
-      }
-    },
-    "tasks/edit": {
-      "method": "editTask",
-      "request": {
-
       },
-      "response": {
-        "success": {
-          "status": 200,
-          "statusMessage": "Successfully edit task"
+      "modules/add": {
+        "method": "add",
+        "request": {
         },
-        "error": {
-          "status": 500,
-          "statusMessage": "Failed to edit task"
+        "response": {
+          "success": {
+            "status": 200,
+            "statusMessage": "Successfully add module"
+          },
+          "error": {
+            "status": 500,
+            "statusMessage": "Failed to add module"
+          }
         }
-      }
-    },
-    "tasks/delete": {
-      "method": "deleteTask",
-      "request": {
-
       },
-      "response": {
-        "success": {
-          "status": 200,
-          "statusMessage": "Successfully delete task"
+      "modules/edit": {
+        "method": "edit",
+        "request": {
         },
-        "error": {
-          "status": 500,
-          "statusMessage": "Failed to delete task"
+        "response": {
+          "success": {
+            "status": 200,
+            "statusMessage": "Successfully edit module"
+          },
+          "error": {
+            "status": 500,
+            "statusMessage": "Failed to edit module"
+          }
         }
-      }
-    },
-    "file/create": {
-      "method": "createFile",
-      "request": {
-
       },
-      "response": {
-        "success": {
-          "status": 200,
-          "statusMessage": "Successfully create file"
+      "modules/delete": {
+        "method": "delete",
+        "request": {
         },
-        "error": {
-          "status": 500,
-          "statusMessage": "Failed to create file"
-        }
-      }
-    },
-    "folder/create": {
-      "method": "createFolder",
-      "request": {
-
-      },
-      "response": {
-        "success": {
-          "status": 200,
-          "statusMessage": "Successfully create folder"
-        },
-        "error": {
-          "status": 500,
-          "statusMessage": "Failed to create folder"
+        "response": {
+          "success": {
+            "status": 200,
+            "statusMessage": "Successfully delete module"
+          },
+          "error": {
+            "status": 500,
+            "statusMessage": "Failed to delete module"
+          }
         }
       }
     }

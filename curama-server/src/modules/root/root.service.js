@@ -1,33 +1,16 @@
-const TaskModel = require('./task.model').model
-
-module.exports.getTasks = async () => {
-  return TaskModel.find({})
+module.exports.getModules = async (model) => {
+  return model.find({})
 }
 
-module.exports.getTaskById = async (data) => {
-  return TaskModel.findOne({ _id: data._id })
-}
-
-module.exports.addTask = async (data) => {
-  const task = new TaskModel(data)
+module.exports.addModule = async (model, data) => {
+  const task = new model(data)
   return task.save()
 }
 
-module.exports.editTask = async (data) => {
-  return TaskModel.findOneAndUpdate({_id: data._id}, data)
+module.exports.editModule = async (model, data) => {
+  return model.findOneAndUpdate({_id: data._id}, data)
 }
 
-module.exports.deleteTask = async (data) => {
-  return await TaskModel.deleteOne({_id: data._id}).exec()
-}
-
-module.exports.createFile = async (data) => {
-  console.log('Success created file')
-  return 'Success created file'
-}
-
-module.exports.createFolder = async (data) => {
-  console.log('Success created folder')
-  throw new Error('Error created folder')
-  return 'Success created folder'
+module.exports.deleteModule = async (model, data) => {
+  return await model.deleteOne({_id: data._id}).exec()
 }

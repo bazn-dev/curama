@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 //const cors = require('cors');
 const session = require('express-session');
+require('dotenv').config();
 
 module.exports.expressLoader = async function(app) {
   //app.use(cors());

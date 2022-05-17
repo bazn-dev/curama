@@ -4,10 +4,6 @@ module.exports.getTasks = async () => {
   return TaskModel.find({})
 }
 
-module.exports.getTaskById = async (data) => {
-  return TaskModel.findOne({ _id: data._id })
-}
-
 module.exports.addTask = async (data) => {
   const task = new TaskModel(data)
   return task.save()

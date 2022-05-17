@@ -63,16 +63,12 @@
     sockets: {
       connect: function () {
         console.log('socket connected');
-      },
-      getTasks: function (data) {
-        console.log(data);
       }
     },
     methods: {
       send () {
         this.$socket.emit(this.data.method, JSON.parse(this.data.requestData))
         this.sockets.subscribe(this.data.method, data => {
-          console.log(data)
           this.data.responseData = JSON.stringify(data);
         });
       }

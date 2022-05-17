@@ -1,5 +1,7 @@
-const developer = require('./developer');
+const root = require('./root')
+const developer = require('./developer')
 
 module.exports.connection = (socket, io) => {
-  developer.connection(socket);
+  root.connection(socket)
+  // developer.connection(socket)
 };
